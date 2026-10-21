@@ -45,6 +45,10 @@ Buka `http://localhost:8080`. Untuk perintah pengembangan, gunakan `npm run dev`
 2. Untuk folder dalam repositori, isi publish directory dengan `ruang-uang`. Tidak perlu build command.
 3. Berkas `_headers` memasang header keamanan pada deploy Netlify.
 
+### Cloudflare Workers
+
+Konfigurasi `wrangler.jsonc` sudah disiapkan untuk menyajikan situs statis dari folder ini. Jika proyek terhubung ke GitHub, pastikan seluruh isi folder ini berada di root repositori. Di pengaturan build Cloudflare, gunakan **Build command** kosong, **Root directory** `/`, dan **Deploy command** `npx wrangler deploy`.
+
 Kamu juga dapat mengunggah berkas situs ke layanan hosting statis yang menerima HTML, CSS, dan JavaScript. Konfigurasi header keamanan bergantung pada penyedia hosting.
 
 ## Keamanan dan batasan
